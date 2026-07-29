@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>照忆 · 支持中心</title>
+  <meta name="description" content="照忆（PhotoCleaner）App 的官方支持页面：联系方式与常见问题。" />
+  <style>
+    :root {
+      --bg: #0d0d0f;
+      --card: #17171b;
+      --border: #2a2a30;
+      --text: #f2f2f5;
+      --muted: #9a9aa3;
+      --accent: #4f9dff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC", "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 48px 20px 80px; }
+    header { margin-bottom: 32px; }
+    h1 { font-size: 28px; margin: 0 0 8px; letter-spacing: .5px; }
+    .sub { color: var(--muted); font-size: 15px; margin: 0; }
+    h2 { font-size: 20px; margin: 40px 0 16px; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 20px 22px;
+      margin: 16px 0;
+    }
+    .contact-mail { font-size: 17px; font-weight: 600; }
+    details {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 4px 18px;
+      margin: 10px 0;
+    }
+    summary {
+      cursor: pointer;
+      font-weight: 600;
+      padding: 12px 0;
+      list-style: none;
+      outline: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::before { content: "＋ "; color: var(--accent); font-weight: 700; }
+    details[open] summary::before { content: "－ "; }
+    details p { color: var(--muted); margin: 0 0 14px; }
+    footer { margin-top: 56px; color: var(--muted); font-size: 13px; border-top: 1px solid var(--border); padding-top: 20px; }
+    nav a { margin-right: 18px; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <nav>
+        <a href="support.html">支持</a>
+        <a href="privacy.html">隐私政策</a>
+      </nav>
+      <h1 style="margin-top:24px;">照忆 · 支持中心</h1>
+      <p class="sub">PhotoCleaner — 相册照片 / 短视频清理工具</p>
+    </header>
+
+    <h2>联系我们</h2>
+    <div class="card">
+      <p style="margin:0 0 8px;">遇到任何问题、建议或需要帮助，欢迎邮件联系，我们通常在 1–2 个工作日内回复：</p>
+      <p class="contact-mail" style="margin:0;">
+        <a href="mailto:cumtx1024@163.com">cumtx1024@163.com</a>
+      </p>
+      <p class="sub" style="margin:12px 0 0;">请在邮件中附上设备型号、系统版本与问题描述，便于我们快速定位。</p>
+    </div>
+
+    <h2>常见问题</h2>
+
+    <details>
+      <summary>照忆会把我的照片上传到服务器吗？</summary>
+      <p>不会。照忆的全部处理（浏览、相似/重复识别、清理）都在你的设备本地完成，照片和视频从不离开设备，我们也没有任何服务器接收你的相册内容。</p>
+    </details>
+
+    <details>
+      <summary>删除的照片去哪了？能找回吗？</summary>
+      <p>照忆通过系统相册接口删除，被删内容会先进入系统「最近删除」相册，保留约 30 天，在此期间你可以在系统「照片」App 中恢复。超过期限后由系统永久清除。</p>
+    </details>
+
+    <details>
+      <summary>为什么需要相册权限？</summary>
+      <p>照忆的核心功能就是帮你回顾和整理相册，因此需要「读取与写入」相册的权限来展示、收藏和删除照片/视频。若你只授权了「部分照片」，照忆仅能处理你选中的那部分。</p>
+    </details>
+
+    <details>
+      <summary>会员订阅怎么管理或取消？</summary>
+      <p>所有订阅由 Apple 通过你的 Apple ID 管理。前往 iPhone「设置 → 你的头像 → 订阅」即可查看、升级或取消。取消后当前计费周期结束前仍可使用会员权益。</p>
+    </details>
+
+    <details>
+      <summary>换了新手机，购买的会员怎么恢复？</summary>
+      <p>用同一个 Apple ID 登录，在照忆的会员页点击「恢复购买」即可还原此前的订阅或终身买断权益。</p>
+    </details>
+
+    <details>
+      <summary>自动续订会员的价格和周期是怎样的？</summary>
+      <p>提供月度、半年、年度自动续订，以及一次性「终身」买断。具体价格以 App 内商店实时显示为准。自动续订会在当前周期结束前 24 小时内扣费，除非提前取消。</p>
+    </details>
+
+    <details>
+      <summary>如何申请退款？</summary>
+      <p>App Store 的购买退款由 Apple 处理，请访问 <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a> 提交退款申请。</p>
+    </details>
+
+    <footer>
+      <p>照忆 PhotoCleaner · 由 jjking 开发<br />
+      如需查看数据处理方式，请阅读 <a href="privacy.html">隐私政策</a>。</p>
+    </footer>
+  </div>
+</body>
+</html>
