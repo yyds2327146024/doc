@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>技术支持 - FloatPrompt</title>
+    <style>
+        :root {
+            --bg: #ffffff;
+            --text: #1d1d1f;
+            --text-secondary: #6e6e73;
+            --accent: #0071e3;
+            --border: #d2d2d7;
+            --card-bg: #f5f5f7;
+            --radius: 12px;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #1d1d1f;
+                --text: #f5f5f7;
+                --text-secondary: #a1a1a6;
+                --accent: #2997ff;
+                --border: #424245;
+                --card-bg: #2d2d2f;
+            }
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 48px 24px 96px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 48px;
+            padding-bottom: 32px;
+            border-bottom: 1px solid var(--border);
+        }
+        .app-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 18px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 36px;
+        }
+        h1 { font-size: 28px; font-weight: 700; margin-bottom: 8px; }
+        header p { color: var(--text-secondary); font-size: 14px; }
+        h2 {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 40px 0 16px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--border);
+        }
+        h3 { font-size: 16px; font-weight: 600; margin: 20px 0 10px; }
+        p, li { color: var(--text-secondary); margin-bottom: 12px; }
+        ul, ol { padding-left: 20px; margin-bottom: 16px; }
+        li { margin-bottom: 8px; }
+        .card {
+            background: var(--card-bg);
+            border-radius: var(--radius);
+            padding: 20px 24px;
+            margin: 16px 0;
+        }
+        .card h3 { margin-top: 0; color: var(--text); }
+        .contact-card {
+            background: linear-gradient(135deg, #667eea20 0%, #764ba220 100%);
+            border-radius: var(--radius);
+            padding: 28px 24px;
+            text-align: center;
+            margin: 32px 0;
+        }
+        .contact-card a {
+            display: inline-block;
+            background: var(--accent);
+            color: #fff;
+            padding: 12px 32px;
+            border-radius: 24px;
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            margin-top: 12px;
+            transition: opacity 0.2s;
+        }
+        .contact-card a:hover { opacity: 0.9; text-decoration: none; }
+        .footer {
+            margin-top: 64px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            font-size: 13px;
+            color: var(--text-secondary);
+        }
+        .footer a { color: var(--accent); text-decoration: none; }
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .step {
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
+            margin-bottom: 12px;
+        }
+        .step-num {
+            flex-shrink: 0;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: var(--accent);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 13px;
+            font-weight: 700;
+            margin-top: 2px;
+        }
+        summary {
+            cursor: pointer;
+            font-weight: 600;
+            padding: 12px 0;
+            color: var(--text);
+            list-style: none;
+        }
+        summary::-webkit-details-marker { display: none; }
+        summary::before { content: '▸ '; font-size: 12px; }
+        details[open] summary::before { content: '▾ '; }
+        details {
+            border-bottom: 1px solid var(--border);
+            padding: 4px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="app-icon">🎬</div>
+            <h1>FloatPrompt 技术支持</h1>
+            <p>让提词变得更简单</p>
+        </header>
+
+        <section>
+            <h2>关于 FloatPrompt</h2>
+            <p>
+                FloatPrompt 是一款为口播创作者设计的提词器 App。通过画中画技术将稿件悬浮在屏幕最上层，
+                让你在拍摄视频、直播或开会时一边看稿一边自然表达。支持自动滚动、语音跟随、逐段翻页和
+                内建录像功能，是短视频创作者的得力工具。
+            </p>
+            <div class="card">
+                <h3>核心功能</h3>
+                <ul>
+                    <li>📱 <strong>画中画悬浮：</strong>稿件浮在任何 App 上方，纯净无播放按钮</li>
+                    <li>📝 <strong>自动滚动：</strong>可调速、循环播放，解放双手</li>
+                    <li>🗣 <strong>语音跟随：</strong>说话到哪，稿子滚到哪（本机离线处理）</li>
+                    <li>📄 <strong>逐段翻页：</strong>适合演讲、录课等节奏精确的场景</li>
+                    <li>🎥 <strong>内建录像：</strong>直接录制口播视频，提词文字不录进画面</li>
+                    <li>🤖 <strong>AI 稿件助手：</strong>接入你自己的 AI 服务，生成和润色口播稿</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>快速入门</h2>
+            <div class="step">
+                <div class="step-num">1</div>
+                <div>
+                    <strong>创建稿件</strong>
+                    <p>点击首页的「+」按钮，输入你的口播文字内容。支持从剪贴板粘贴。</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-num">2</div>
+                <div>
+                    <strong>打开画中画权限</strong>
+                    <p>首次使用前，确保 iPhone 「设置 → 通用 → 画中画」中「自动开启画中画」已打开。</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-num">3</div>
+                <div>
+                    <strong>开始悬浮</strong>
+                    <p>点击任意稿件，点击「开始悬浮」。按 Home 键返回桌面，提词会始终浮在最上层。</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-num">4</div>
+                <div>
+                    <strong>自定义样式</strong>
+                    <p>在设置中调整文字大小、颜色、滚动速度和背景透明度，让提词最适合你的阅读习惯。</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>常见问题</h2>
+
+            <details>
+                <summary>画中画窗口没有出现？</summary>
+                <p>请检查：</p>
+                <ul>
+                    <li>确保「设置 → 通用 → 画中画 → 自动开启画中画」已打开。</li>
+                    <li>iOS 16.6 及以上系统才支持本功能。</li>
+                    <li>确认稿件内容不为空。</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>语音跟随不准确？</summary>
+                <p>请尝试：</p>
+                <ul>
+                    <li>在安静环境中使用，减少背景噪音。</li>
+                    <li>说话速度稍放慢，发音清晰。</li>
+                    <li>确保已授予麦克风和语音识别权限。</li>
+                    <li>语音识别完全在设备端完成，无需联网。</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>免费版有什么限制？</summary>
+                <p>免费版提供以下额度，足够日常轻度使用：</p>
+                <ul>
+                    <li>最多保存 3 篇稿件</li>
+                    <li>单次悬浮提词最长 60 秒</li>
+                    <li>单次录像最长 3 分钟</li>
+                    <li>逐段翻页和 AI 助手为专业版功能</li>
+                </ul>
+                <p>升级专业版后解除所有限制。</p>
+            </details>
+
+            <details>
+                <summary>如何配置 AI 助手？</summary>
+                <p>设置 → AI 配置，填入你自己的 OpenAI 兼容 API 地址、模型名称和 API Key。配置保存在本地 Keychain，不会上传。</p>
+            </details>
+
+            <details>
+                <summary>录制的视频在哪？</summary>
+                <p>录制完成后点击「保存到相册」，视频会保存到你的系统相簿。也可以选择仅保存到 App 内，稍后再导出。</p>
+            </details>
+
+            <details>
+                <summary>如何恢复购买？</summary>
+                <p>进入付费墙页面（点击任意专业版功能入口），点击底部的「恢复购买」。你在其他设备上的订阅或买断将自动恢复。</p>
+            </details>
+
+            <details>
+                <summary>如何取消订阅？</summary>
+                <p>在 iPhone 上：「设置 → Apple ID → 订阅 → FloatPrompt → 取消订阅」。取消后当前周期内仍可继续使用，到期后不再自动续费。</p>
+            </details>
+
+            <details>
+                <summary>支持哪些设备？</summary>
+                <p>iPhone（iOS 16.6+）、iPad（iPadOS 16.6+）。iPad 支持横竖屏全方向使用。</p>
+            </details>
+        </section>
+
+        <section>
+            <h2>系统要求</h2>
+            <div class="card">
+                <ul>
+                    <li>iPhone 或 iPad，运行 iOS / iPadOS 16.6 及以上</li>
+                    <li>画中画功能需设备支持（iPhone 7 及更新机型）</li>
+                    <li>录像功能需后置摄像头</li>
+                    <li>语音跟随需麦克风权限（可选功能）</li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="contact-card">
+            <h3 style="margin-bottom: 8px;">需要帮助？</h3>
+            <p style="margin-bottom: 4px;">我们很乐意听取你的反馈和建议</p>
+            <a href="mailto:support@fuci.app?subject=FloatPrompt%20Feedback">✉️ 联系支持团队</a>
+        </div>
+
+        <div class="footer">
+            <p>
+                <a href="privacy.html">隐私政策</a>
+                &nbsp;·&nbsp;
+                <a href="terms.html">服务条款</a>
+            </p>
+            <p style="margin-top: 12px;">FloatPrompt &copy; 2024</p>
+        </div>
+    </div>
+</body>
+</html>
