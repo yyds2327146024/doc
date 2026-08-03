@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>技术支持 - FloatPrompt</title>
+    <title>隐私政策 - FloatPrompt</title>
     <style>
         :root {
             --bg: #ffffff;
@@ -63,9 +63,9 @@
             padding-bottom: 8px;
             border-bottom: 1px solid var(--border);
         }
-        h3 { font-size: 16px; font-weight: 600; margin: 20px 0 10px; }
+        h3 { font-size: 16px; font-weight: 600; margin: 24px 0 10px; }
         p, li { color: var(--text-secondary); margin-bottom: 12px; }
-        ul, ol { padding-left: 20px; margin-bottom: 16px; }
+        ul { padding-left: 20px; margin-bottom: 16px; }
         li { margin-bottom: 8px; }
         .card {
             background: var(--card-bg);
@@ -74,26 +74,22 @@
             margin: 16px 0;
         }
         .card h3 { margin-top: 0; color: var(--text); }
-        .contact-card {
-            background: linear-gradient(135deg, #667eea20 0%, #764ba220 100%);
-            border-radius: var(--radius);
-            padding: 28px 24px;
-            text-align: center;
-            margin: 32px 0;
-        }
-        .contact-card a {
+        .badge {
             display: inline-block;
-            background: var(--accent);
-            color: #fff;
-            padding: 12px 32px;
-            border-radius: 24px;
-            font-size: 16px;
+            padding: 2px 10px;
+            border-radius: 20px;
+            font-size: 12px;
             font-weight: 600;
-            text-decoration: none;
-            margin-top: 12px;
-            transition: opacity 0.2s;
+            background: #34c759;
+            color: #fff;
+            margin-right: 6px;
         }
-        .contact-card a:hover { opacity: 0.9; text-decoration: none; }
+        .badge.warn {
+            background: #ff9500;
+        }
+        .badge.info {
+            background: var(--accent);
+        }
         .footer {
             margin-top: 64px;
             padding-top: 24px;
@@ -102,42 +98,19 @@
             font-size: 13px;
             color: var(--text-secondary);
         }
-        .footer a { color: var(--accent); text-decoration: none; }
-        a { color: var(--accent); text-decoration: none; }
+        .footer a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
         a:hover { text-decoration: underline; }
-        .step {
-            display: flex;
-            gap: 12px;
-            align-items: flex-start;
-            margin-bottom: 12px;
-        }
-        .step-num {
-            flex-shrink: 0;
-            width: 24px;
-            height: 24px;
-            border-radius: 50%;
-            background: var(--accent);
-            color: #fff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 13px;
-            font-weight: 700;
-            margin-top: 2px;
-        }
-        summary {
-            cursor: pointer;
-            font-weight: 600;
-            padding: 12px 0;
-            color: var(--text);
-            list-style: none;
-        }
-        summary::-webkit-details-marker { display: none; }
-        summary::before { content: '▸ '; font-size: 12px; }
-        details[open] summary::before { content: '▾ '; }
-        details {
-            border-bottom: 1px solid var(--border);
-            padding: 4px 0;
+        .last-updated {
+            font-size: 12px;
+            color: var(--text-secondary);
+            margin-top: 4px;
         }
     </style>
 </head>
@@ -145,147 +118,120 @@
     <div class="container">
         <header>
             <div class="app-icon">🎬</div>
-            <h1>FloatPrompt 技术支持</h1>
-            <p>让提词变得更简单</p>
+            <h1>FloatPrompt 隐私政策</h1>
+            <p>你的隐私是我们的首要原则</p>
+            <p class="last-updated">最后更新：2024 年 8 月</p>
         </header>
 
         <section>
-            <h2>关于 FloatPrompt</h2>
+            <h2>核心承诺</h2>
             <p>
-                FloatPrompt 是一款为口播创作者设计的提词器 App。通过画中画技术将稿件悬浮在屏幕最上层，
-                让你在拍摄视频、直播或开会时一边看稿一边自然表达。支持自动滚动、语音跟随、逐段翻页和
-                内建录像功能，是短视频创作者的得力工具。
+                FloatPrompt 是一款本地优先的提词器应用。<strong>我们不收集、不存储、不上传您的任何个人数据。</strong>
+                所有核心功能完全在你的设备上运行，无需注册账户，无需联网。
             </p>
             <div class="card">
-                <h3>核心功能</h3>
-                <ul>
-                    <li>📱 <strong>画中画悬浮：</strong>稿件浮在任何 App 上方，纯净无播放按钮</li>
-                    <li>📝 <strong>自动滚动：</strong>可调速、循环播放，解放双手</li>
-                    <li>🗣 <strong>语音跟随：</strong>说话到哪，稿子滚到哪（本机离线处理）</li>
-                    <li>📄 <strong>逐段翻页：</strong>适合演讲、录课等节奏精确的场景</li>
-                    <li>🎥 <strong>内建录像：</strong>直接录制口播视频，提词文字不录进画面</li>
-                    <li>🤖 <strong>AI 稿件助手：</strong>接入你自己的 AI 服务，生成和润色口播稿</li>
-                </ul>
+                <h3><span class="badge">✓</span> 我们不跟踪你</h3>
+                <p>FloatPrompt 不包含任何广告、用户画像或行为追踪。没有第三方分析 SDK，没有设备指纹采集。</p>
             </div>
-        </section>
-
-        <section>
-            <h2>快速入门</h2>
-            <div class="step">
-                <div class="step-num">1</div>
-                <div>
-                    <strong>创建稿件</strong>
-                    <p>点击首页的「+」按钮，输入你的口播文字内容。支持从剪贴板粘贴。</p>
-                </div>
-            </div>
-            <div class="step">
-                <div class="step-num">2</div>
-                <div>
-                    <strong>打开画中画权限</strong>
-                    <p>首次使用前，确保 iPhone 「设置 → 通用 → 画中画」中「自动开启画中画」已打开。</p>
-                </div>
-            </div>
-            <div class="step">
-                <div class="step-num">3</div>
-                <div>
-                    <strong>开始悬浮</strong>
-                    <p>点击任意稿件，点击「开始悬浮」。按 Home 键返回桌面，提词会始终浮在最上层。</p>
-                </div>
-            </div>
-            <div class="step">
-                <div class="step-num">4</div>
-                <div>
-                    <strong>自定义样式</strong>
-                    <p>在设置中调整文字大小、颜色、滚动速度和背景透明度，让提词最适合你的阅读习惯。</p>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <h2>常见问题</h2>
-
-            <details>
-                <summary>画中画窗口没有出现？</summary>
-                <p>请检查：</p>
-                <ul>
-                    <li>确保「设置 → 通用 → 画中画 → 自动开启画中画」已打开。</li>
-                    <li>iOS 16.6 及以上系统才支持本功能。</li>
-                    <li>确认稿件内容不为空。</li>
-                </ul>
-            </details>
-
-            <details>
-                <summary>语音跟随不准确？</summary>
-                <p>请尝试：</p>
-                <ul>
-                    <li>在安静环境中使用，减少背景噪音。</li>
-                    <li>说话速度稍放慢，发音清晰。</li>
-                    <li>确保已授予麦克风和语音识别权限。</li>
-                    <li>语音识别完全在设备端完成，无需联网。</li>
-                </ul>
-            </details>
-
-            <details>
-                <summary>免费版有什么限制？</summary>
-                <p>免费版提供以下额度，足够日常轻度使用：</p>
-                <ul>
-                    <li>最多保存 3 篇稿件</li>
-                    <li>单次悬浮提词最长 60 秒</li>
-                    <li>单次录像最长 3 分钟</li>
-                    <li>逐段翻页和 AI 助手为专业版功能</li>
-                </ul>
-                <p>升级专业版后解除所有限制。</p>
-            </details>
-
-            <details>
-                <summary>如何配置 AI 助手？</summary>
-                <p>设置 → AI 配置，填入你自己的 OpenAI 兼容 API 地址、模型名称和 API Key。配置保存在本地 Keychain，不会上传。</p>
-            </details>
-
-            <details>
-                <summary>录制的视频在哪？</summary>
-                <p>录制完成后点击「保存到相册」，视频会保存到你的系统相簿。也可以选择仅保存到 App 内，稍后再导出。</p>
-            </details>
-
-            <details>
-                <summary>如何恢复购买？</summary>
-                <p>进入付费墙页面（点击任意专业版功能入口），点击底部的「恢复购买」。你在其他设备上的订阅或买断将自动恢复。</p>
-            </details>
-
-            <details>
-                <summary>如何取消订阅？</summary>
-                <p>在 iPhone 上：「设置 → Apple ID → 订阅 → FloatPrompt → 取消订阅」。取消后当前周期内仍可继续使用，到期后不再自动续费。</p>
-            </details>
-
-            <details>
-                <summary>支持哪些设备？</summary>
-                <p>iPhone（iOS 16.6+）、iPad（iPadOS 16.6+）。iPad 支持横竖屏全方向使用。</p>
-            </details>
-        </section>
-
-        <section>
-            <h2>系统要求</h2>
             <div class="card">
-                <ul>
-                    <li>iPhone 或 iPad，运行 iOS / iPadOS 16.6 及以上</li>
-                    <li>画中画功能需设备支持（iPhone 7 及更新机型）</li>
-                    <li>录像功能需后置摄像头</li>
-                    <li>语音跟随需麦克风权限（可选功能）</li>
-                </ul>
+                <h3><span class="badge">✓</span> 数据全在本地</h3>
+                <p>你的稿件内容、设置偏好和录制视频均仅存储在你的设备上。我们无权访问，也无法访问。</p>
             </div>
         </section>
 
-        <div class="contact-card">
-            <h3 style="margin-bottom: 8px;">需要帮助？</h3>
-            <p style="margin-bottom: 4px;">我们很乐意听取你的反馈和建议</p>
-            <a href="mailto:support@fuci.app?subject=FloatPrompt%20Feedback">✉️ 联系支持团队</a>
-        </div>
+        <section>
+            <h2>系统权限使用说明</h2>
+
+            <h3>📷 相机</h3>
+            <p>
+                <span class="badge info">仅设备端</span>
+                在录制模式中访问相机，用于拍摄你的口播视频。视频内容仅保存到你的设备相册和 App 本地目录，不会上传至任何服务器。
+            </p>
+
+            <h3>🎤 麦克风</h3>
+            <p>
+                <span class="badge info">仅设备端</span>
+                仅在开启"语音跟随"功能时使用，用于实时识别你的朗读进度以便提词自动滚动。音频处理完全在本机进行，录音数据不会被保存或传输。你也可以选择不使用此功能——FloatPrompt 支持手动滚动模式。
+            </p>
+
+            <h3>🗣 语音识别</h3>
+            <p>
+                <span class="badge info">仅设备端</span>
+                语音跟随功能依赖 Apple 的语音识别框架。识别过程在你的设备上完成，识别结果仅用于匹配浮动的提词文本，不会离开你的设备。Apple 可能根据其隐私政策处理语音数据以改进识别服务，详见 Apple 隐私政策。
+            </p>
+
+            <h3>🖼 相册</h3>
+            <p>
+                <span class="badge info">仅写入</span>
+                FloatPrompt 使用"仅添加"权限，只在你主动保存录制视频时将成片写入相册。我们不会读取或扫描你的相册内容。
+            </p>
+        </section>
+
+        <section>
+            <h2>数据存储与技术细节</h2>
+
+            <h3>UserDefaults（系统偏好存储）</h3>
+            <p>
+                你的 App 偏好设置（如字体大小、滚动速度、显示模式等）通过苹果的 UserDefaults 机制存储在设备本地。这些数据仅在 App 内部使用，不包含任何个人身份信息。
+                已按 Apple 要求声明 <code>NSPrivacyAccessedAPICategoryUserDefaults</code> 的使用原因（CA92.1），表明仅用于存储用户偏好，不用于指纹识别。
+            </p>
+
+            <h3>Keychain（安全存储）</h3>
+            <p>
+                当你配置第三方 AI 服务时，你输入的 API 密钥会使用 iOS 系统级 Keychain 加密存储。密钥仅在发送 AI 请求时从 Keychain 读取，用完即弃，不缓存于内存。
+            </p>
+
+            <h3>Core Data（稿件存储）</h3>
+            <p>
+                你的提词稿件文本通过 Core Data 持久化存储在 App 的私有沙盒内。其他 App 无法访问这些数据。
+            </p>
+        </section>
+
+        <section>
+            <h2>AI 助手功能</h2>
+            <p>
+                <span class="badge warn">涉及第三方</span>
+                AI 稿件助手需要你自己配置 OpenAI 兼容的 API 服务地址和密钥。当你使用 AI 生成/改写稿件时：
+            </p>
+            <ul>
+                <li>当前稿件文本会发送到你配置的第三方 AI 服务。</li>
+                <li>FloatPrompt 本身不收集、不中继、不记录这些请求。</li>
+                <li>数据传输的安全性取决于你配置的 API 地址（建议使用 HTTPS）。</li>
+                <li>请查看你所使用 AI 服务的隐私政策以了解其数据处理方式。</li>
+            </ul>
+            <p>
+                你可以随时清除 AI 配置，此后此项功能完全不会产生网络请求。
+            </p>
+        </section>
+
+        <section>
+            <h2>内购与 App Store</h2>
+            <p>
+                专业版订阅和终身买断通过 Apple App Store 处理。所有支付信息由 Apple 管理，FloatPrompt 无法接触你的付款详情、信用卡号或账单地址。交易记录仅存在于你的 Apple ID 账户中。
+            </p>
+        </section>
+
+        <section>
+            <h2>儿童隐私</h2>
+            <p>
+                FloatPrompt 不针对 13 岁以下儿童设计。我们不会故意收集儿童的个人信息。
+            </p>
+        </section>
+
+        <section>
+            <h2>政策变更</h2>
+            <p>
+                我们可能在更新 App 时修订本隐私政策。重大变更将在 App 内以弹窗通知。建议定期查看本页面以了解最新版本。
+            </p>
+        </section>
 
         <div class="footer">
-            <p>
-                <a href="privacy.html">隐私政策</a>
+            <p>如有隐私相关问题，请联系：</p>
+            <p><a href="mailto:cumtx1024@163.com">cumtx1024@163.com</a></p>
+            <p style="margin-top: 16px;">
+                <a href="floattext-support.html">技术支持</a>
                 &nbsp;·&nbsp;
-                <a href="terms.html">服务条款</a>
+                <a href="floattext-terms.html">服务条款</a>
             </p>
             <p style="margin-top: 12px;">FloatPrompt &copy; 2024</p>
         </div>
