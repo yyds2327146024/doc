@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>支持 · Downsize</title>
+<meta name="description" content="Downsize 视频与照片压缩工具的支持页：常见问题与联系方式。">
+<style>
+  :root { --indigo: #5b5bd6; --ink: #1c1c28; --muted: #6b6b7b; --bg: #f5f5f7; --card: #ffffff; --line: #e5e5ea; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color: var(--ink); background: var(--bg); line-height: 1.65; -webkit-font-smoothing: antialiased; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 40px 20px 72px; }
+  header { border-bottom: 1px solid var(--line); padding-bottom: 24px; margin-bottom: 8px; }
+  .badge { display: inline-flex; align-items: center; justify-content: center; width: 56px; height: 56px; border-radius: 14px; background: rgba(91,91,214,0.12); color: var(--indigo); font-size: 28px; margin-bottom: 14px; }
+  h1 { font-size: 1.7rem; margin: 0 0 8px; letter-spacing: -0.01em; }
+  .lede { color: var(--muted); margin: 0; }
+  section { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 20px 22px; margin-top: 18px; }
+  section h2 { font-size: 1.12rem; margin: 0 0 8px; }
+  section p { margin: 0; color: #3a3a48; }
+  .faq { margin-top: 14px; }
+  .faq:first-of-type { margin-top: 0; }
+  .q { font-weight: 600; margin: 0 0 4px; }
+  .a { margin: 0 0 4px; color: #3a3a48; }
+  .contact { text-align: center; }
+  .contact a.btn { display: inline-block; margin-top: 10px; background: var(--indigo); color: #fff; padding: 12px 24px; border-radius: 12px; font-weight: 600; }
+  .contact a.btn:hover { text-decoration: none; opacity: 0.92; }
+  a { color: var(--indigo); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  footer { margin-top: 32px; text-align: center; color: var(--muted); font-size: 0.85rem; }
+  .nav { margin-bottom: 28px; font-size: 0.9rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="nav"><a href="index.html">← 返回 Downsize</a></div>
+  <header>
+    <div class="badge">💬</div>
+    <h1>支持</h1>
+    <p class="lede">遇到问题或有建议？先看看常见问题，也随时欢迎邮件联系我们。</p>
+  </header>
+
+  <section>
+    <h2>常见问题</h2>
+
+    <div class="faq">
+      <p class="q">压缩会不会上传我的视频？</p>
+      <p class="a">不会。所有压缩都在你的设备本地完成，没有任何上传媒体文件的代码路径。</p>
+    </div>
+
+    <div class="faq">
+      <p class="q">压缩后能保证不超过我设定的大小吗？</p>
+      <p class="a">可以。设定目标大小后，App 会预估码率并留出余量，压完实测；若超标会自动降档重压，直到不超过目标。</p>
+    </div>
+
+    <div class="faq">
+      <p class="q">原视频会被删除吗？</p>
+      <p class="a">默认只生成副本，原件不动。只有在「批量清理」里你逐个选择「保留新视频」，并经过确认与系统删除弹窗后，对应原件才会被删除。</p>
+    </div>
+
+    <div class="faq">
+      <p class="q">HEIC / HEVC 在旧设备上打不开怎么办？</p>
+      <p class="a">照片可选 JPEG 输出；视频可关闭「高保真算法」改用 H.264，兼容更老的设备。</p>
+    </div>
+
+    <div class="faq">
+      <p class="q">批量清理里的「缩小约 X%」是什么意思？</p>
+      <p class="a">批量按每个视频各自的原始大小缩小相应比例，因此长短视频都适用，而不是一刀切压到某个固定大小。</p>
+    </div>
+
+    <div class="faq">
+      <p class="q">只授权了部分照片可以用吗？</p>
+      <p class="a">可以。App 完整支持「有限照片访问」，你可以随时在选择器里点「添加更多」把想处理的文件加进来。</p>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>联系我们</h2>
+    <p>没找到答案？把设备型号、系统版本和问题描述发给我们，会尽快回复。</p>
+    <a class="btn" href="mailto:cumtx1024@163.com">发送邮件</a>
+    <p style="margin-top:12px;"><a href="mailto:cumtx1024@163.com">cumtx1024@163.com</a></p>
+  </section>
+
+  <footer>© 2026 Downsize · 视频与照片压缩</footer>
+</div>
+</body>
+</html>
